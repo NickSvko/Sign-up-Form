@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sideImage">
+
+    </div>
+    <form action="https://httpbin.org/post" method="post">
+        <header>
+            <p>
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                Sign up now to get started.
+            </p>
+            <p>You know you want to.</p>
+        </header>
+        <section>
+            <h2>Let's do this!</h2>
+            <ul>
+                <li>
+                    <label for="fistName">FIRST NAME</label>
+                    <input type="text" id="fistName" name="fistName">
+                </li>
+                <li>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email">
+                </li>
+                <li>
+                    <label for="password">PASSWORD</label>
+                    <input type="text" id="password" name=  "password">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" id="lastName" name="lastName">
+                </li>
+                <li>
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber">
+                </li>
+                <li>
+                    <label for="confirmPass">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmPass" name="confirmPass">
+                </li>
+            </ul>
+        </section>
+        <section>
+            <button type="submit" class="createAccountBtn">Create Account</button>
+             <div class="logInText">Already have an account?<a href="">Log in</a></div>
+        </section>
+        
+    </form>
+</body>
+</html>
