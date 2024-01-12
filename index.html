@@ -20,43 +20,48 @@
             <header>
                 <p>
                     This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-                    Sign up now to get started.
+                    Sign up <em>now</em> to get started.
                 </p>
-                <p>You know you want to.</p>
+                <p class="bottomLine">You <em>know</em> you want to.</p>
             </header>
-            <form action="https://httpbin.org/post" method="post">
-                <section>
-                    <h2>Let's do this!</h2>
-                    <div>
-                        <label for="fistName">FIRST NAME</label>
-                        <input type="text" id="fistName" name="fistName">
+            <div class="formSection">
+                <h2>Let's do this!</h2>
+                <form action="https://httpbin.org/post" method="post">
+                    <div class="leftColumn">
+                        <div>
+                            <label for="fistName">FIRST NAME</label>
+                            <input type="text" id="fistName" name="fistName">
+                        </div>
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password">
+                        </div>
                     </div>
-                    <div>
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email">
+                    <div class="rightColumn">
+                        <div>
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName" name="lastName">
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div>
+                            <label for="confirmPass">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPass" name="confirmPass">
+                        </div>
+                        <div class="submitSection">
+                            <button type="submit" class="createAccountBtn">Create Account</button>
+                            <div class="logInText">Already have an account?<a href=""> Log in</a></div>
+                        </div>
                     </div>
-                    <div>
-                        <label for="password">PASSWORD</label>
-                        <input type="text" id="password" name=  "password">
-                    </div>
-                    <div>
-                        <label for="lastName">LAST NAME</label>
-                        <input type="text" id="lastName" name="lastName">
-                    </div>                    
-                    <div>
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div>
-                        <label for="confirmPass">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirmPass" name="confirmPass">
-                    </div>
-                </section>
-                <section>
-                    <button type="submit" class="createAccountBtn">Create Account</button>
-                    <div class="logInText">Already have an account?<a href="">Log in</a></div>
-                </section>
-            </form>
+                </form>
+            </div>
+
         </div>
     </div>
 </body>

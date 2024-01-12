@@ -17,6 +17,8 @@ html {
 .main {
     display: flex;
     height: 100vh;
+    font-family: Helvetica, sans-serif;
+    background-color: ghostwhite;
 }
 
 .leftSide {
@@ -52,8 +54,7 @@ html {
     justify-content: center;
     align-items: center;
 
-    position: relative;
-    top: 20%;
+    margin-top: 22vh;
 }
 
 .logo img {
@@ -70,6 +71,78 @@ html {
     top: 1rem;
 }
 
+.rightSide header {
+    font-size: 1.8rem;
+    width: 100%;
+}
 
+header p {
+    padding: 17vh 7% 3% 5%;
+}
+
+header .bottomLine {
+    padding: 0;
+    padding-left: 5%;
+    padding-bottom: 5vh;
+}
+
+.rightSide h2{
+    font-size: 2rem;
+    padding-bottom: 2vh;
+}
+
+.rightSide .formSection {
+    background-color: white;
+    box-shadow: 0px 5px 5px -5px rgb(176, 170, 170);
+    margin-bottom: 3vh;
+    padding: 3% 5% 2% 5%;
+}
+
+form {
+    display: flex;
+}
+
+form input{
+    display: block;
+    border: 1px solid rgb(241, 233, 233);
+    border-radius: 0.3rem;
+    height: 2.6vh;
+    width: 18vw;
+    margin: 0.1rem 5rem 1.5rem 0;
+}
+
+form input:focus {
+    outline: 1px solid rgb(80, 80, 225);
+    box-shadow: 1px 1px 5px rgb(176, 170, 170);
+}
+
+form section {
+    color: rgb(65, 64, 64);
+}
+
+.submitSection {
+    margin-left: 5%;
+}
+
+.submitSection button {
+    padding: 1rem 4rem;
+    border-radius: 0.5rem;
+    margin-bottom: 3vh;
+
+    font-weight: bold;
+    color: white;
+    background-color: #596D48;
+    box-shadow: 1px 1px 5px rgb(176, 170, 170);
+}
+
+.submitSection .logInText {
+    font-size: 1.3rem;
+}
+
+.logInText a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
 
 
