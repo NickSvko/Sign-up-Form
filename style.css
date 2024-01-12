@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Norse-Bold';
-    src: url('Norse-Bold.otf') format('opentype');
+    src: url('source/Norse-Bold.otf') format('opentype');
   }
 
 html {
@@ -22,7 +22,7 @@ html {
 }
 
 .leftSide {
-    background-image: url(background-img.jpg);
+    background-image: url(source/background-img.jpg);
     background-position: center;
     background-size: cover;
 
@@ -46,6 +46,8 @@ html {
 
 .rightSide {
     width: 60%;
+    display: flex;
+    flex-direction: column;
 }
 
 .leftSide .logo {
@@ -94,7 +96,6 @@ header .bottomLine {
 .rightSide .formSection {
     background-color: white;
     box-shadow: 0px 5px 5px -5px rgb(176, 170, 170);
-    margin-bottom: 3vh;
     padding: 3% 5% 2% 5%;
 }
 
@@ -106,7 +107,7 @@ form input{
     display: block;
     border: 1px solid rgb(241, 233, 233);
     border-radius: 0.3rem;
-    height: 2.6vh;
+    height: 2.5rem;
     width: 18vw;
     margin: 0.1rem 5rem 1.5rem 0;
 }
@@ -121,7 +122,9 @@ form section {
 }
 
 .submitSection {
-    margin-left: 5%;
+    padding-top: 4%;
+    padding-left: 5%;
+    height: 20%;
 }
 
 .submitSection button {
