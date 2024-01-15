@@ -1,26 +1,35 @@
 const pass = document.querySelector('#password');
 const confirmPass = document.querySelector('#confirmPass');
-const errorMsg = document.querySelector('.error');
+const passError = document.querySelector('.passwordError');
+const createAccountBtn = document.querySelector('.createAccountBtn');
 
 confirmPass.addEventListener('keyup', () => {
     if(pass.value !== confirmPass.value) {
-        errorMsg.textContent = '⋆ Passwords do not match';
+        passError.textContent = '⋆ Passwords do not match';
         confirmPass.style.border = '1px solid rgb(170, 21, 21)';
-
+        createAccountBtn.disabled = true;
     }
     else {
-        errorMsg.textContent = '';
+        passError.textContent = '';
         confirmPass.style.border = '1px solid rgb(241, 233, 233)';
+        createAccountBtn.disabled = false;
     }
 })
+
 
 pass.addEventListener('keyup', () => {
     if(confirmPass.value !== pass.value) {
-        errorMsg.textContent = '⋆ Passwords do not match';
+        passError.textContent = '⋆ Passwords do not match';
         confirmPass.style.border = '1px solid rgb(170, 21, 21)';
+        createAccountBtn.disabled = true;
     }
     else {
-        errorMsg.textContent = '';
+        passError.textContent = '';
         confirmPass.style.border = '1px solid rgb(241, 233, 233)';
+        createAccountBtn.disabled = false;
     }
 })
+
+
+
+
