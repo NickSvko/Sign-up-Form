@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -24,43 +25,42 @@
                 </p>
                 <p class="bottomLine">You <em>know</em> you want to.</p>
             </header>
-            <div class="formSection">
-                <h2>Let's do this!</h2>
-                <form action="https://httpbin.org/post" method="post">
-                    <div class="leftColumn">
-                        <div>
+            <form action="https://httpbin.org/post" method="post">
+                <div class="inputSection">
+                    <h2>Let's do this!</h2>
+                    <div class="details">
+                        <div class="input">
                             <label for="fistName">FIRST NAME</label>
-                            <input type="text" id="fistName" name="fistName">
+                            <input type="text" id="fistName" name="fistName" required>
                         </div>
-                        <div>
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email">
-                        </div>
-                        <div>
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
-                        </div>
-                    </div>
-                    <div class="rightColumn">
-                        <div>
+                        <div class="input">
                             <label for="lastName">LAST NAME</label>
-                            <input type="text" id="lastName" name="lastName">
+                            <input type="text" id="lastName" name="lastName" required>
                         </div>
-                        <div>
+                        <div class="input">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input">
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" required>
                         </div>
-                        <div>
+                        <div class="input">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="input">
                             <label for="confirmPass">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirmPass" name="confirmPass">
+                            <input type="password" id="confirmPass" name="confirmPass" required>
+                            <div class="error"></div>
                         </div>
                     </div>
-                </form>
-            </div>
-            <div class="submitSection">
-                <button type="submit" class="createAccountBtn">Create Account</button>
-                <div class="logInText">Already have an account?<a href=""> Log in</a></div>
-            </div>
+                </div>
+                <div class="submitSection">
+                    <button type="submit" class="createAccountBtn">Create Account</button>
+                    <div class="logInText">Already have an account?<a href=""> Log in</a></div>
+                </div>
+            </form>
         </div>
     </div>
 </body>

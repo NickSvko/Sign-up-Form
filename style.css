@@ -91,25 +91,44 @@ header .bottomLine {
 .rightSide h2{
     font-size: 2rem;
     padding-bottom: 2vh;
+    opacity: 80%;
 }
 
-.rightSide .formSection {
+.rightSide .inputSection {
     background-color: white;
     box-shadow: 0px 5px 5px -5px rgb(176, 170, 170);
     padding: 3% 5% 2% 5%;
 }
 
-form {
+form .input {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-weight: bold;
+    opacity: 60%;
+    margin: 0 5rem 1.5rem 0;
 }
 
-form input{
-    display: block;
+.input label {
+    margin-bottom: 0.1rem;
+}
+
+.input .error {
+    padding-top: 0.1rem;
+    font-weight: lighter;
+    color: rgb(170, 21, 21);
+}
+
+input {
     border: 1px solid rgb(241, 233, 233);
     border-radius: 0.3rem;
     height: 2.5rem;
     width: 18vw;
-    margin: 0.1rem 5rem 1.5rem 0;
+}
+
+form .details {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 form input:focus {
@@ -147,5 +166,3 @@ form section {
     font-weight: bold;
     text-decoration: none;
 }
-
-
